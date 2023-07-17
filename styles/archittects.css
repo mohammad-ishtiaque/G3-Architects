@@ -6,7 +6,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-header {
+.header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
@@ -34,7 +34,7 @@ header {
 
 .nav li {
     list-style: none;
-    margin-right: 45px;
+    margin-right: 25px;
 
 }
 
@@ -94,10 +94,13 @@ header {
     justify-content: center;
 }
 
+.banner-pic img{
+    width: 100%;
+}
+
 .banner-pic {
     margin-top: 40px;
-    width: 1440px;
-    height: 700px;
+    width: 100%;
 }
 
 .features-content {
@@ -239,4 +242,34 @@ header {
     text-align: center;
     padding: 40px 0;
     margin: 0 auto;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .header{
+        padding: 20px;
+    }
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav ul{
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .header{
+        padding: 50px;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    .nav ul{
+        margin-top: 20px;
+    }
 }
